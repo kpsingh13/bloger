@@ -1,11 +1,18 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+# from django.http import HttpResponse
+
+post=[
+        {
+            
+        }
+    ]
+
 
 def home(request):
-    return HttpResponse ('<h1>Bloggin home page</h1>')
+    return render (request,'blog/home.html')
 
 def about(request):
-    return HttpResponse ('<h1>Blog About</h1>')
+    return render (request,'blog/about.html')
 
 
 # Create your views here.
