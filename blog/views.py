@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from .models import Post #.models= it is in same folder
+
+
 # from django.http import HttpResponse
 
 post=[
@@ -21,7 +24,7 @@ post=[
 
 def home(request):
     context={
-        'posts':post
+        'posts':Post.objects.all()
     }
     return render (request,'blog/home.html',context)
 
