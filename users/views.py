@@ -3,4 +3,4 @@ from django.contrib.auth.forms import UserChangeForm
 # Create your views here.
 def register(request):
     form=UserChangeForm()
-    return render(request,'users/register.html',{'form': form})
+    return render(request,'user/register.html',{'form': form})
