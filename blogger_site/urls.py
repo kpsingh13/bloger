@@ -1,4 +1,5 @@
 """
+# project routes
 URL configuration for blogger_site project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -22,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/', user_views.register, name='register'),
     path('', include('blog.urls')),
+    # path('/', include('blog.urls')),
+    
     
 
 ]

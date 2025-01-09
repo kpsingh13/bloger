@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import Post  #.models= "."here means that it is in same folder
 
 
-# from django.http import HttpResponse
+from django.http import HttpResponse
 
 
 def home(request):
@@ -14,5 +14,9 @@ def home(request):
 def about(request):
     return render (request,'blog/about.html',{'title':'About'})
 
+def kprout(request):
+    return HttpResponse('<h1>kp blog page</h1>')
 
 # Create your views here.
+
+
