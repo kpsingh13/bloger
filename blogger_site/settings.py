@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'users.apps.UsersConfig',     #this was added while creating a new application #user
     'blog.apps.BlogConfig',      #this was added while creating a new application #Blog
+    'crispy_forms',                 #added to import crispy forms
+    'crispy_bootstrap4',            #resolved through stackoverflow. also added variable value at the end of the page.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -119,7 +121,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'  #added variable to make bootstrao 4 run here
+
+
