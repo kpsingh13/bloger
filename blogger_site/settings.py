@@ -129,4 +129,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'  #added variable to make bootstrao 4 run here
 
-
+LOGIN_REDIRECT_URL= 'blog-home'

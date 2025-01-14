@@ -12,8 +12,8 @@ def register(request):
         if form.is_valid():
             form.save() #saving the data, makes hashpass by own
             username = form.cleaned_data.get('username')
-            messages.success(request, f'Account created for {username}!')  #flash message
-            return redirect('blog-home')
+            messages.success(request, f'Your Account has been created for {username}! you are now able to login')  #flash message
+            return redirect('login')
     else:
         form=UserRegisterForm()
 
